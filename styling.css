@@ -18,13 +18,22 @@
 }
 
 body {
+    font-family: Determination;
+    font-size: xx-large;
     /* --LinGrad: linear-gradient(-70deg, var(--Burgandy) 0%, var(--Scarlet) 100%); */
     /* background-size: 4000%; */
     /* background-image: var(--LinGrad); */
     /* animation: gradCycle 10s ease-in infinite alternate-reverse; */
 }
 
-* {
-    font-family: Determination;
-    font-size: large;
-}
+
+/* .nav { */
+
+
+/* font-size: xx-large; */
+
+
+/* } */
+
+
+/* * {} */
