@@ -1,0 +1,17 @@
+to do list
+############################
+-navbar proper styling
+-social media listings and proper links (hovering reveals more information)
+-distro kid uploads
+-responsive grid card setup for all the songs organized with youtube links and where to purchase them
+(maybe organized by year release/album )
+-about me section
+-what i use section
+-
+-
+-
+-
+-
+-
+-
+-
