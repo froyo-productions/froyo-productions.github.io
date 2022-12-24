@@ -1,72 +1,118 @@
-/*color pallette https://www.canva.com/colors/color-palettes/buddhist-monk/ */
-
-
-/* where i put my variables */
-
-:root {
-    /*  */
-    --pinkPrimary: #ff00e1;
-    --pinkTertiary: #ffa3f4;
-    --pinkSecondary: #ff6cda;
-    --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
-    --pinkTopLeftGrad: repeating-linear-gradient(to left top, var(--pinkTertiary), var(--pinkSecondary));
-    --BlueGrotto: #048AE4;
-    --TrueViolet: #9505E3;
-    --TrueCyan: #04F9F2;
-}
-
-@Font-face {
-    font-family: Determination;
-    src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
-}
-
-body {
-    max-width: 750px;
-    font-family: Determination;
-    font-size: xx-large;
-    --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
-    background-size: 4000%;
-    background-image: var(--LinGrad);
-    animation: gradCycle 10s ease-in infinite alternate-reverse;
-}
-
-.nav {
-    /* border: 8px double black; */
-    border: 8px outset var(--BlueGrotto);
-    border-radius: 15px;
-    letter-spacing: -5px;
-    /* word-spacing: 0px; */
-    /* font-size: xx-large; */
-}
-
-p {
-    font-size: x-large;
-}
-
-.about-me-section>img {
-    /* border: 3px solid black; */
-    border: 1px solid black;
-    /* border-radius: 15px; */
-}
-
-.about-me-section {
-    /* word-spacing: -4px; */
-    /* letter-spacing: -2px; */
-    border: 8px double black;
-    border-radius: 15px;
-}
-
-
-/* idea for gradient coloring/reacting on hover from portfolio project */
-
-
-/* .nav :is(ul,
+    /*color pallette https://www.canva.com/colors/color-palettes/buddhist-monk/ */
+    /* where i put my variables */
+    
+     :root {
+        /*  */
+        --pinkPrimary: #ff00e1;
+        --pinkTertiary: #ffa3f4;
+        --pinkSecondary: #ff6cda;
+        --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
+        --pinkTopLeftGrad: repeating-linear-gradient(to left top, var(--pinkTertiary), var(--pinkSecondary));
+        --BlueGrotto: #048AE4;
+        --TrueViolet: #9505E3;
+        --TrueCyan: #04F9F2;
+    }
+    
+    @Font-face {
+        font-family: Determination;
+        src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
+    }
+    
+    body {
+        /* set max width for viewport on all devices */
+        max-width: 750px;
+        font-family: Determination;
+        font-size: xx-large;
+        --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
+        background-size: 4000%;
+        background-image: var(--LinGrad);
+        animation: gradCycle 10s ease-in infinite alternate-reverse;
+    }
+    
+    .nav {
+        /* border: 8px double black; */
+        border: 8px outset var(--BlueGrotto);
+        border-radius: 15px;
+        letter-spacing: -5px;
+        /* word-spacing: 0px; */
+        /* font-size: xx-large; */
+    }
+    
+    p {
+        font-size: x-large;
+    }
+    
+    .about-me-section>img {
+        /* border: 3px solid black; */
+        /* border: 1px solid black; */
+        /* border-radius: 15px; */
+    }
+    
+    .about-me-section {
+        /* word-spacing: -4px; */
+        /* letter-spacing: -2px; */
+        border: 8px double black;
+        border-radius: 15px;
+    }
+    
+    .card {
+        /* border-radius: 4px; */
+        /* background: #fff; */
+        /* -webkit-transform: translate3d(0, 0, 0); supposed to stop flickering (but no dice)*/
+        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+        cursor: pointer;
+        border: 6px inset #ffffff;
+        min-height: 225px;
+        ;
+    }
+    /* self explanatory */
+    
+    .card:hover {
+        transform: scale(1.05) rotateZ(-1deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+        border: 6px inset #ffffff;
+    }
+    
+    #shadowBox {
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.2);
+        /* Black w/opacity/see-through */
+        border: 3px solid;
+    }
+    /* .rainbow {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 32px;
+        font-family: monospace;
+        letter-spacing: 5px;
+    } */
+    
+    .rainbow_text_animated {
+        /* background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff); */
+        background: linear-gradient(to right, #ff0000, #ff9100, #d0ff00, #09ff00, #0000ff, #ff00bb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 3s ease-in-out infinite;
+        background-size: 400% 100%;
+    }
+    
+    @keyframes rainbow_animation {
+        0%,
+        100% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 100% 0;
+        }
+    }
+    /* idea for gradient coloring/reacting on hover from portfolio project */
+    /* .nav :is(ul,
 li) {
     background: var(--pinkLinGrad);
     background-color: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } */
-
-
-/* * {} */
+    /* * {} */
