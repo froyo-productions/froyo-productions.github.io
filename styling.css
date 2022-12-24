@@ -10,6 +10,9 @@
     --pinkSecondary: #ff6cda;
     --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
     --pinkTopLeftGrad: repeating-linear-gradient(to left top, var(--pinkTertiary), var(--pinkSecondary));
+    --BlueGrotto: #048AE4;
+    --TrueViolet: #9505E3;
+    --TrueCyan: #04F9F2;
 }
 
 @Font-face {
@@ -18,22 +21,52 @@
 }
 
 body {
+    max-width: 750px;
     font-family: Determination;
     font-size: xx-large;
-    /* --LinGrad: linear-gradient(-70deg, var(--Burgandy) 0%, var(--Scarlet) 100%); */
-    /* background-size: 4000%; */
-    /* background-image: var(--LinGrad); */
-    /* animation: gradCycle 10s ease-in infinite alternate-reverse; */
+    --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
+    background-size: 4000%;
+    background-image: var(--LinGrad);
+    animation: gradCycle 10s ease-in infinite alternate-reverse;
+}
+
+.nav {
+    /* border: 8px double black; */
+    border: 8px outset var(--BlueGrotto);
+    border-radius: 15px;
+    letter-spacing: -5px;
+    /* word-spacing: 0px; */
+    /* font-size: xx-large; */
+}
+
+p {
+    font-size: x-large;
+}
+
+.about-me-section>img {
+    /* border: 3px solid black; */
+    border: 1px solid black;
+    /* border-radius: 15px; */
+}
+
+.about-me-section {
+    /* word-spacing: -4px; */
+    /* letter-spacing: -2px; */
+    border: 8px double black;
+    border-radius: 15px;
 }
 
 
-/* .nav { */
+/* idea for gradient coloring/reacting on hover from portfolio project */
 
 
-/* font-size: xx-large; */
-
-
-/* } */
+/* .nav :is(ul,
+li) {
+    background: var(--pinkLinGrad);
+    background-color: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
 
 
 /* * {} */
