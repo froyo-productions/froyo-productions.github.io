@@ -103,13 +103,14 @@
         bottom: 0;
         right: 0;
         opacity: 0;
-        -webkit-transition: all 0.4s ease-in-out 0s;
-        -moz-transition: all 0.4s ease-in-out 0s;
-        transition: all 0.4s ease-in-out 0s;
+        -webkit-transition: all 0.275s ease-in-out 0s;
+        -moz-transition: all 0.275s ease-in-out 0s;
+        transition: all 0.275s ease-in-out 0s;
     }
     
     .card-content:hover .card-content-overlay {
         opacity: 1;
+        z-index: 1;
     }
     
     .card-content-image {
@@ -128,15 +129,16 @@
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        -moz-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.275s ease-in-out 0s;
+        -moz-transition: all 0.275s ease-in-out 0s;
+        transition: all 0.275s ease-in-out 0s;
     }
     
     .card-content:hover .card-content-details {
         top: 50%;
         left: 50%;
         opacity: 1;
+        z-index: 1;
     }
     
     .fadeIn-left {
