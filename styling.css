@@ -61,25 +61,92 @@
         /* -webkit-transform: translate3d(0, 0, 0); supposed to stop flickering (but no dice)*/
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
         cursor: pointer;
-        border: 6px inset #ffffff;
+        /* border: 6px inset #ffffff; */
+        border: 6px inset blue;
         min-height: 225px;
         ;
     }
     /* self explanatory */
     
     .card:hover {
-        transform: scale(1.05) rotateZ(-1deg);
+        transform: scale(1.05);
+        /* transform: scale(1.05) rotateZ(-1deg); */
         box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-        border: 6px inset #ffffff;
+        /* border: 6px inset #ffffff; */
+        border: 6px inset cyan;
     }
     
     #shadowBox {
         background-color: rgb(0, 0, 0);
-        /* Fallback color */
         background-color: rgba(0, 0, 0, 0.2);
         /* Black w/opacity/see-through */
+        /* Fallback color */
         border: 3px solid;
     }
+    /* image overlay effect */
+    
+    .card-content {
+        /* position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        overflow: hidden; */
+    }
+    
+    .card-content .card-content-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 99%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
+    
+    .card-content:hover .card-content-overlay {
+        opacity: 1;
+    }
+    
+    .card-content-image {
+        width: 100%;
+    }
+    
+    .card-content-details {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    .card-content:hover .card-content-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+    
+    .fadeIn-left {
+        left: 20%;
+    }
+    
+    .fadeIn-bottom {
+        top: 80%;
+    }
+    /* image overlay effect */
     /* .rainbow {
         text-align: center;
         text-decoration: underline;
