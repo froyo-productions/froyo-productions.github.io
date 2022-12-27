@@ -6,8 +6,7 @@ to do list
 -responsive grid card setup for all the songs organized with youtube links and where to purchase them
 (maybe organized by year release/album )
 -about me section (90%) [should upload new photo with mask]
--what i use section (30%)[started, should fill in nanokey, and fix image buttons]
--
+-what i use section (85%)
 -
 -
 -
