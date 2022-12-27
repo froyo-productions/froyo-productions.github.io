@@ -83,6 +83,11 @@
         /* Fallback color */
         border: 3px solid;
     }
+    
+    .strokeme {
+        /* color: white; */
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
     /* image overlay effect */
     
     .card-content {
@@ -159,6 +164,7 @@
     
     .rainbow_text_animated {
         /* background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff); */
+        /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
         background: linear-gradient(to right, #ff0000, #ff9100, #d0ff00, #09ff00, #0000ff, #ff00bb);
         -webkit-background-clip: text;
         background-clip: text;
