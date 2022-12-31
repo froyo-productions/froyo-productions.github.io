@@ -18,6 +18,11 @@
         src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
     }
     
+    @Font-face {
+        font-family: Minecraft;
+        src: url('fonts/Minecraftia.ttf');
+    }
+    
     body {
         /* set max width for viewport on all devices */
         max-width: 750px;
@@ -27,6 +32,18 @@
         background-size: 4000%;
         background-image: var(--LinGrad);
         animation: gradCycle 10s ease-in infinite alternate-reverse;
+    }
+    
+    .mine-font {
+        /* font-family: Minecraft; */
+        font-family: Minecraft;
+        font-size: x-large;
+        text-decoration: none;
+        /* src: url('fonts/Minecraftia.ttf'); */
+    }
+    
+    .mine-font>a {
+        text-decoration: none;
     }
     
     .nav {
@@ -51,9 +68,19 @@
     .about-me-section {
         /* word-spacing: -4px; */
         /* letter-spacing: -2px; */
+    }
+    
+    .cool-border {
         border: 8px double black;
         border-radius: 15px;
     }
+    
+    .cool-background {
+        /* color: #000; */
+        background: black
+    }
+    
+    .header-border {}
     
     .card {
         /* border-radius: 4px; */
