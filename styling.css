@@ -28,6 +28,8 @@
         max-width: 750px;
         font-family: Determination;
         font-size: xx-large;
+        /* font-size: 4vmin; */
+        /* font-size: 5.5vmin; */
         --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
         background-size: 4000%;
         background-image: var(--LinGrad);
@@ -37,7 +39,8 @@
     .mine-font {
         /* font-family: Minecraft; */
         font-family: Minecraft;
-        font-size: x-large;
+        /* font-size: x-large; */
+        font-size: 4vmin;
         text-decoration: none;
         /* src: url('fonts/Minecraftia.ttf'); */
     }
@@ -83,6 +86,12 @@
     
     p {
         font-size: x-large;
+        /* font-size: 3.5vmin; */
+        /* font-size: 5vmin; */
+    }
+    
+    .special-font-sizing {
+        font-size: xx-large;
     }
     
     .about-me-section>img {

@@ -3,10 +3,10 @@ to do list
 -social media listings and proper links (hovering reveals more information)
 -bandcamp uploads
 -responsive grid card setup for all the songs organized with youtube links and where to purchase them
-(maybe organized by year release/album ) (35%)
+(maybe organized by year release/album ) (40%)
 - make script to read in text file and automatically fill in with information about
 -have collapsible section for songs by release year 
--navbar proper styling (65%)
+-navbar proper styling (85%)
 -about me section (90%) [should upload new photo with mask]
 -what i use section (90%) [have properly scale on mobile]
 -
