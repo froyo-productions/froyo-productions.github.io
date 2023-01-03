@@ -1,3 +1,3 @@
 (title,release date,special category,youtube embed url, bandcamp url,description)
-
+-use release date and then category to organize songs by
 tunnelvision,2022,linnstrument deluxe,https://fuck-you,https://fuck-me,one of the 1st couple tracks i made with the linnstrument.

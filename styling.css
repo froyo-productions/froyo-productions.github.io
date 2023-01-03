@@ -46,13 +46,39 @@
         text-decoration: none;
     }
     
-    .nav {
+    .nav-main {
         /* border: 8px double black; */
         border: 8px outset var(--BlueGrotto);
         border-radius: 15px;
         letter-spacing: -5px;
         /* word-spacing: 0px; */
         /* font-size: xx-large; */
+    }
+    
+    .nav-tracks {
+        /* border: 8px double black; */
+        /* border: 8px outset var(--BlueGrotto); */
+        /* border-radius: 15px; */
+        /* letter-spacing: -5px; */
+        /* height: 49.55px; */
+        /* word-spacing: 0px; */
+        /* font-size: xx-large; */
+    }
+    /* here's where i absolutely ruin the nav theming */
+    
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #ff61f7;
+        text-decoration: none;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+    
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: var(--pinkPrimary);
+        background-color: var(--TrueViolet);
+        border-color: var(--TrueViolet) var(--TrueViolet) var(--pinkPrimary);
     }
     
     p {
@@ -90,7 +116,7 @@
         cursor: pointer;
         /* border: 6px inset #ffffff; */
         border: 6px inset blue;
-        min-height: 225px;
+        /* min-height: 225px; */
         ;
     }
     /* self explanatory */
@@ -101,6 +127,20 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
         /* border: 6px inset #ffffff; */
         border: 6px inset cyan;
+    }
+    
+    .card-track {
+        cursor: default;
+        min-height: 0px;
+        border: 6px inset var(--pinkPrimary);
+    }
+    
+    .card-track:hover {
+        transform: scale(.975);
+        /* transform: scale(1.05) rotateZ(-1deg); */
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06); */
+        /* border: 6px inset #ffffff; */
+        border: 6px inset purple;
     }
     
     #shadowBox {
@@ -128,7 +168,7 @@
     .card-content .card-content-overlay {
         background: rgba(0, 0, 0, 0.7);
         position: absolute;
-        height: 99%;
+        height: 100%;
         width: 100%;
         left: 0;
         top: 0;
