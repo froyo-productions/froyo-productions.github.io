@@ -3,62 +3,74 @@ const url = "data/music_releases.csv"
 $.get(url, function(data, error) {
     // Parse the data
     var parsedData = Papa.parse(data, {
-        header: true // Indicates that the first row in the .csv file is the column name
-
+        header: true, // Indicates that the first row in the .csv file is the column name
+        skipEmptyLines: true
+            // complete: populateTracksList(file)
     }).data; // Get the data property from the parsing
     // console.log(parsedData);
     populateTracksList(parsedData)
 })
 
 
-// $('body').append(arrayToTable(Papa.parse(data).data));
-
-
-
 function populateTracksList(data) {
-    title = data[0].title;
-    release_date = data[0].release_date;
-    youtube_embed_url = data[0].youtube_embed_url;
-    bandcamp_url = data[0].bandcamp_url;
 
-    console.log("title: ", title);
-    console.log("release date: ", release_date);
-    console.log("youtube embed url:", youtube_embed_url);
-    console.log("bandcamp url:", bandcamp_url);
+    // data.forEach((song, index) => {
+    // });
+    data.forEach(track => {
+        // console.log(track.title, track);
+        console.log(track.title);
 
-    // make tempcard 
-    var tempDiv = $(document.createElement('div'));
-    let cardClasses = "card card-track p-0 bg-info";
-    $(tempDiv).addClass(cardClasses);
-    // console.log(cardClasses);
+        title = track.title;
+        release_date = track.release_date;
+        youtube_url = track.youtube_url;
+        bandcamp_url = track.bandcamp_url;
 
-    // #_2022-grid
-    var idtoAddto = '#_' + release_date + '-grid';
-    // add to specific year grid
-    console.log('adding to this id: ', idtoAddto);
-    $(idtoAddto).append(tempDiv);
+        // console.log("title: ", title);
+        // console.log("release date: ", release_date);
+        // console.log("youtube url:", youtube_url);
+        // console.log("bandcamp url:", bandcamp_url);
 
-    // make bandcamp link
-    var tempBandLink = $(document.createElement('a'));
-    tempBandLink.attr('href', bandcamp_url);
-    tempBandLink.attr('target', '_blank');
-    // add bandcamp inside div
-    $(tempDiv).append(tempBandLink);
+        //* make tempcard 
+        var tempDiv = $(document.createElement('div'));
+        let cardClasses = "card card-track p-0 bg-info";
+        $(tempDiv).addClass(cardClasses);
+        // console.log(cardClasses);
 
-    // make image icon
-    var imgIcon = $(document.createElement('img'));
-    imgIcon.attr('src', 'icons/bandcamp-logo-clipart-8.png');
-    $(imgIcon).addClass('img-fluid');
-    // imgIcon.classList.add('img-fluid');
-    $(tempBandLink).append(tempBandLink);
+        // #_2022-grid
+        var idtoAddto = '#_' + release_date + '-grid';
+        // add to specific year grid
+        // console.log('adding to this id: ', idtoAddto);
+        $(idtoAddto).append(tempDiv);
 
-    // make youtube embed
-    var embedIframe = $(document.createElement('iframe'));
-    embedIframe.attr('src', youtube_embed_url);
-    embedIframe.attr('frameborder', '0');
-    $(embedIframe).addClass('p-0 img-fluid');
-    //add youtube embed to div
-    $(tempDiv).append(embedIframe);
+        // make bandcamp link
+        var tempBandLink = $(document.createElement('a'));
+        tempBandLink.attr('href', bandcamp_url);
+        tempBandLink.attr('target', '_blank');
+        // add bandcamp inside div
+        $(tempDiv).append(tempBandLink);
+
+        // make image icon
+        var imgIcon = $(document.createElement('img'));
+        imgIcon.attr('src', 'icons/bandcamp-logo-clipart-8.png');
+        $(imgIcon).addClass('img-fluid');
+        // imgIcon.classList.add('img-fluid');
+        $(tempBandLink).append(imgIcon);
+
+        // make youtube embed
+        var embedIframe = $(document.createElement('iframe'));
+        // regex to turn url into embed 
+        youtube_embed_url = youtube_url.replace('watch?v=', 'embed/');
+        // console.log('preRegex url:', youtube_url);
+        // console.log('postRegex url:', youtube_embed_url);
+        embedIframe.attr('src', youtube_embed_url);
+        embedIframe.attr('frameborder', '0');
+        embedIframe.attr('allow', 'fullscreen;');
+        $(embedIframe).addClass('p-0 img-fluid');
+        //add youtube embed to div
+        $(tempDiv).append(embedIframe);
+
+
+    });
 
     // #_2022-grid
 

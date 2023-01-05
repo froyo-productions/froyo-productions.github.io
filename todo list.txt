@@ -4,7 +4,7 @@ to do list
 -bandcamp uploads
 -responsive grid card setup for all the songs organized with youtube links and where to purchase them
 (maybe organized by year release/album ) (50%)
-- make script to read in text file and automatically fill in with information about (65%)
+- make script to read in text file and automatically fill in with information about (100%)
 -have collapsible section for songs by release year 
 -navbar proper styling (85%)
 -about me section (90%) [should upload new photo with mask]
