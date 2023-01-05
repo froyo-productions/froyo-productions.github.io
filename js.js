@@ -28,15 +28,12 @@ function populateTracksList(data) {
 
     // make tempcard 
     var tempDiv = $(document.createElement('div'));
-    let cardClasses = "card card-track p-0 bg-info"
-        // let cardClasses = "card card-track p-0 bg-info".split(" ");
-        // tempDiv.classList.add(cardClasses);
+    let cardClasses = "card card-track p-0 bg-info";
     $(tempDiv).addClass(cardClasses);
     // console.log(cardClasses);
 
     // #_2022-grid
-    idtoAddto = '#_' + release_date + '-grid';
-    // idtoAddto = '_' + release_date + '-grid';
+    var idtoAddto = '#_' + release_date + '-grid';
     // add to specific year grid
     console.log('adding to this id: ', idtoAddto);
     $(idtoAddto).append(tempDiv);
@@ -53,7 +50,7 @@ function populateTracksList(data) {
     imgIcon.attr('src', 'icons/bandcamp-logo-clipart-8.png');
     $(imgIcon).addClass('img-fluid');
     // imgIcon.classList.add('img-fluid');
-    $(imgIcon).append(tempBandLink);
+    $(tempBandLink).append(tempBandLink);
 
     // make youtube embed
     var embedIframe = $(document.createElement('iframe'));

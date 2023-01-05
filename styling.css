@@ -115,6 +115,23 @@
         background: black
     }
     
+    .btn-naked {
+        /* https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit */
+        /* background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit; */
+        all: unset;
+        cursor: pointer;
+    }
+    
+    .btn-naked:focus {
+        outline: orange 5px auto;
+    }
+    
     .header-border {}
     
     .card {
