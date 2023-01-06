@@ -18,11 +18,11 @@ function populateTracksList(data) {
     // });
     data.forEach(track => {
         // console.log(track.title, track);
-        console.log(track.title);
+        // console.log(track.title);
 
         title = track.title;
         release_date = track.release_date;
-        youtube_url = track.youtube_url;
+        youtube_url = track.youtube_url_playlist_included;
         bandcamp_url = track.bandcamp_url;
 
         // console.log("title: ", title);
@@ -36,7 +36,7 @@ function populateTracksList(data) {
         $(tempDiv).addClass(cardClasses);
         // console.log(cardClasses);
 
-        // #_2022-grid
+        //ex: #_2022-grid
         var idtoAddto = '#_' + release_date + '-grid';
         // add to specific year grid
         // console.log('adding to this id: ', idtoAddto);
@@ -59,7 +59,11 @@ function populateTracksList(data) {
         // make youtube embed
         var embedIframe = $(document.createElement('iframe'));
         // regex to turn url into embed 
-        youtube_embed_url = youtube_url.replace('watch?v=', 'embed/');
+        // for normal youtube url
+        // youtube_embed_url = youtube_url.replace('watch?v=', 'embed/');
+        // for playlist attached
+        youtube_embed_url = youtube_url.replace('watch?v=', 'embed?');
+
         // console.log('preRegex url:', youtube_url);
         // console.log('postRegex url:', youtube_embed_url);
         embedIframe.attr('src', youtube_embed_url);

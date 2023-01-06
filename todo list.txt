@@ -1,18 +1,24 @@
 to do list
 ############################
 -social media listings and proper links (hovering reveals more information)
--bandcamp uploads
--responsive grid card setup for all the songs organized with youtube links and where to purchase them
-(maybe organized by year release/album ) (50%)
-- make script to read in text file and automatically fill in with information about (100%)
--have collapsible section for songs by release year 
--navbar proper styling (85%)
+-find social media icons for youtube,soundcloud,twitter, 
+-upload tracks onto bandcamp
+-revitalize bandcamp with AI art (possible 8bit style overall)
+-make album art for 2022 uploads (operating systems and algorithms respectively)
+
+-navbar proper styling (90%)
 -about me section (90%) [should upload new photo with mask]
--what i use section (90%) [have properly scale on mobile]
+-fix tile load in effect to work properly
 -
 -
 -
+-have sections collapsible (eh)
 -
 -
 -
--
+
+-what i use section (100%) [have properly scale on mobile]
+-responsive grid card setup for all the songs organized with youtube links and where to purchase them (100%)
+-have collapsible section for songs by release year (100%)
+- make script to read in text file and automatically fill in with information about (100%)
+(maybe organized by year release/album ) (100%)

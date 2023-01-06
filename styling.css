@@ -49,6 +49,13 @@
         text-decoration: none;
     }
     
+    .scaling-popup-text {
+        font-size: 3.5vmin;
+    }
+    /* .scaling-popup-text-title {
+        font-size: 4vmin;
+    } */
+    
     .nav-main {
         /* border: 8px double black; */
         border: 8px outset var(--BlueGrotto);
