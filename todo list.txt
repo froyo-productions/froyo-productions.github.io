@@ -1,8 +1,8 @@
 to do list
 ############################
 -social media listings and proper links (hovering reveals more information)
--find social media icons for youtube,soundcloud,twitter, 
--upload tracks onto bandcamp
+-find social media icons for youtube,soundcloud,twitter, (20%)
+-upload tracks onto bandcamp (33%)
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
 
