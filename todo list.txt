@@ -1,13 +1,12 @@
 to do list
 ############################
 -social media listings and proper links (hovering reveals more information)
--fix grid card loadin script misbehaving
--upload tracks onto bandcamp (33%)
+-fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
+-upload tracks onto bandcamp (85%)
 
 -navbar proper styling (90%)
--about me section (90%) [should upload new photo with mask]
 -fix tile load in effect to work properly
 -
 -
@@ -17,6 +16,7 @@ to do list
 -
 -
 
+-about me section (100%) [should upload new photo with mask]
 -find social media icons for youtube,soundcloud,twitter, (100%)
 -what i use section (100%) [have properly scale on mobile]
 -responsive grid card setup for all the songs organized with youtube links and where to purchase them (100%)
