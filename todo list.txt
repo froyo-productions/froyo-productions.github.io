@@ -1,7 +1,7 @@
 to do list
 ############################
 -social media listings and proper links (hovering reveals more information)
--find social media icons for youtube,soundcloud,twitter, (20%)
+-fix grid card loadin script misbehaving
 -upload tracks onto bandcamp (33%)
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
@@ -17,6 +17,7 @@ to do list
 -
 -
 
+-find social media icons for youtube,soundcloud,twitter, (100%)
 -what i use section (100%) [have properly scale on mobile]
 -responsive grid card setup for all the songs organized with youtube links and where to purchase them (100%)
 -have collapsible section for songs by release year (100%)
