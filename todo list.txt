@@ -1,5 +1,6 @@
 to do list
 ############################
+-make ui rainbow text cycle better
 -social media listings and proper links (hovering reveals more information)
 -fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
 -revitalize bandcamp with AI art (possible 8bit style overall)
