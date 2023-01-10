@@ -1,348 +1,347 @@
-    /*color pallette https://www.canva.com/colors/color-palettes/buddhist-monk/ */
-    /* where i put my variables */
-    
-     :root {
-        /*  */
-        --pinkPrimary: #ff00e1;
-        --pinkTertiary: #ffa3f4;
-        --pinkSecondary: #ff6cda;
-        --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
-        --pinkTopLeftGrad: repeating-linear-gradient(to left top, var(--pinkTertiary), var(--pinkSecondary));
-        --BlueGrotto: #048AE4;
-        --TrueViolet: #9505E3;
-        --TrueCyan: #04F9F2;
-    }
-    
-    @Font-face {
-        font-family: Determination;
-        src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
-    }
-    
-    @Font-face {
-        font-family: Minecraft;
-        src: url('fonts/Minecraftia.ttf');
-    }
-    
-    body {
-        /* set max width for viewport on all devices */
-        max-width: 750px;
-        font-family: Determination;
-        font-size: xx-large;
-        /* font-size: 4vmin; */
-        /* font-size: 5.5vmin; */
-        --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
-        background-size: 4000%;
-        background-image: var(--LinGrad);
-        animation: gradCycle 10s ease-in infinite alternate-reverse;
-    }
-    
-    .mine-font {
-        /* font-family: Minecraft; */
-        font-family: Minecraft;
-        /* font-size: x-large; */
-        font-size: 4vmin;
-        text-decoration: none;
-        /* src: url('fonts/Minecraftia.ttf'); */
-    }
-    
-    .mine-font>a {
-        text-decoration: none;
-    }
-    
-    .scaling-popup-text {
-        font-size: 3.5vmin;
-    }
-    /* .scaling-popup-text-title {
+        /*color pallette https://www.canva.com/colors/color-palettes/buddhist-monk/ */
+        /* where i put my variables */
+        
+         :root {
+            /*  */
+            --pinkPrimary: #ff00e1;
+            --pinkTertiary: #ffa3f4;
+            --pinkSecondary: #ff6cda;
+            --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
+            --pinkTopLeftGrad: repeating-linear-gradient(to left top, var(--pinkTertiary), var(--pinkSecondary));
+            --BlueGrotto: #048AE4;
+            --TrueViolet: #9505E3;
+            --TrueCyan: #04F9F2;
+        }
+        
+        @Font-face {
+            font-family: Determination;
+            src: url('fonts/DeterminationMonoWebRegular-Z5oq.ttf');
+        }
+        
+        @Font-face {
+            font-family: Minecraft;
+            src: url('fonts/Minecraftia.ttf');
+        }
+        
+        body {
+            /* set max width for viewport on all devices */
+            max-width: 750px;
+            font-family: Determination;
+            font-size: xx-large;
+            /* font-size: 4vmin; */
+            /* font-size: 5.5vmin; */
+            --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
+            background-size: 4000%;
+            background-image: var(--LinGrad);
+            animation: gradCycle 10s ease-in infinite alternate-reverse;
+        }
+        
+        .mine-font {
+            /* font-family: Minecraft; */
+            font-family: Minecraft;
+            /* font-size: x-large; */
+            font-size: 4vmin;
+            text-decoration: none;
+            /* src: url('fonts/Minecraftia.ttf'); */
+        }
+        
+        .mine-font>a {
+            text-decoration: none;
+        }
+        
+        .scaling-popup-text {
+            font-size: 3.5vmin;
+        }
+        /* .scaling-popup-text-title {
         font-size: 4vmin;
     } */
-    
-    .nav-main {
-        /* border: 8px double black; */
-        border: 8px outset var(--BlueGrotto);
-        border-radius: 15px;
-        letter-spacing: -5px;
-        /* word-spacing: 0px; */
-        /* font-size: xx-large; */
-    }
-    
-    .nav-tracks {
-        /* border: 8px double black; */
-        /* border: 8px outset var(--BlueGrotto); */
-        /* border-radius: 15px; */
-        /* letter-spacing: -5px; */
-        /* height: 49.55px; */
-        /* word-spacing: 0px; */
-        /* font-size: xx-large; */
-    }
-    /* here's where i absolutely ruin the nav theming */
-    
-    .nav-link {
-        display: block;
-        padding: 0.5rem 1rem;
-        color: #ff61f7;
-        text-decoration: none;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    }
-    
-    .nav-tabs .nav-item.show .nav-link,
-    .nav-tabs .nav-link.active {
-        color: var(--pinkPrimary);
-        background-color: var(--TrueViolet);
-        border-color: var(--TrueViolet) var(--TrueViolet) var(--pinkPrimary);
-    }
-    
-    p {
-        font-size: x-large;
-        /* font-size: 3.5vmin; */
-        /* font-size: 5vmin; */
-    }
-    
-    .special-font-sizing {
-        font-size: xx-large;
-    }
-    
-    .about-me-section>img {
-        /* border: 3px solid black; */
-        /* border: 1px solid black; */
-        /* border-radius: 15px; */
-    }
-    
-    .about-me-section {
-        /* word-spacing: -4px; */
-        /* letter-spacing: -2px; */
-    }
-    
-    .cool-border {
-        border: 8px double black;
-        border-radius: 15px;
-    }
-    
-    .cool-background {
-        /* color: #000; */
-        background: black
-    }
-    
-    .btn-naked {
-        /* https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit */
-        /* background: none;
+        
+        .nav-main {
+            /* border: 8px double black; */
+            border: 8px outset var(--BlueGrotto);
+            border-radius: 15px;
+            letter-spacing: -5px;
+            /* word-spacing: 0px; */
+            /* font-size: xx-large; */
+        }
+        
+        .nav-tracks {
+            /* border: 8px double black; */
+            /* border: 8px outset var(--BlueGrotto); */
+            /* border-radius: 15px; */
+            /* letter-spacing: -5px; */
+            /* height: 49.55px; */
+            /* word-spacing: 0px; */
+            /* font-size: xx-large; */
+        }
+        /* here's where i absolutely ruin the nav theming */
+        
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #ff61f7;
+            text-decoration: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        }
+        
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: var(--pinkPrimary);
+            background-color: var(--TrueViolet);
+            border-color: var(--TrueViolet) var(--TrueViolet) var(--pinkPrimary);
+        }
+        
+        p {
+            font-size: x-large;
+            /* font-size: 3.5vmin; */
+            /* font-size: 5vmin; */
+        }
+        
+        .special-font-sizing {
+            font-size: xx-large;
+        }
+        
+        .about-me-section>img {
+            /* border: 3px solid black; */
+            /* border: 1px solid black; */
+            /* border-radius: 15px; */
+        }
+        
+        .about-me-section {
+            /* word-spacing: -4px; */
+            /* letter-spacing: -2px; */
+        }
+        
+        .cool-border {
+            border: 8px double black;
+            border-radius: 15px;
+        }
+        
+        .cool-background {
+            /* color: #000; */
+            background: black
+        }
+        
+        .btn-naked {
+            /* https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit */
+            /* background: none;
         color: inherit;
         border: none;
         padding: 0;
         font: inherit;
         cursor: pointer;
         outline: inherit; */
-        all: unset;
-        cursor: pointer;
-    }
-    
-    .btn-naked:focus {
-        outline: orange 5px auto;
-    }
-    
-    .header-border {}
-    
-    .card {
-        /* border-radius: 4px; */
-        /* background: #fff; */
-        /* -webkit-transform: translate3d(0, 0, 0); supposed to stop flickering (but no dice)*/
-        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-        cursor: pointer;
-        /* border: 6px inset #ffffff; */
-        border: 6px inset blue;
-        /* min-height: 225px; */
-        ;
-    }
-    /* self explanatory */
-    
-    .card:hover {
-        transform: scale(1.05);
-        /* transform: scale(1.05) rotateZ(-1deg); */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-        /* border: 6px inset #ffffff; */
-        border: 6px inset cyan;
-    }
-    
-    .card-track {
-        cursor: default;
-        min-height: 0px;
-        border: 6px inset var(--pinkPrimary);
-    }
-    
-    .card-track:hover {
-        transform: scale(.975);
-        /* transform: scale(1.05) rotateZ(-1deg); */
-        /* box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06); */
-        /* border: 6px inset #ffffff; */
-        border: 6px inset purple;
-    }
-    
-    #shadowBox {
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.2);
-        /* Black w/opacity/see-through */
-        /* Fallback color */
-        border: 3px solid;
-    }
-    
-    .strokeme {
-        /* color: white; */
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-    /* image overlay effect */
-    
-    .card-content {
-        /* position: relative;
+            all: unset;
+            cursor: pointer;
+        }
+        
+        .btn-naked:focus {
+            outline: orange 5px auto;
+        }
+        
+        .header-border {}
+        
+        .card {
+            /* border-radius: 4px; */
+            /* background: #fff; */
+            /* -webkit-transform: translate3d(0, 0, 0); supposed to stop flickering (but no dice)*/
+            transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+            cursor: pointer;
+            /* border: 6px inset #ffffff; */
+            border: 6px inset blue;
+            /* min-height: 225px; */
+            ;
+        }
+        /* self explanatory */
+        
+        .card:hover {
+            transform: scale(1.05);
+            /* transform: scale(1.05) rotateZ(-1deg); */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+            /* border: 6px inset #ffffff; */
+            border: 6px inset cyan;
+        }
+        
+        .card-track {
+            cursor: default;
+            min-height: 0px;
+            border: 6px inset var(--pinkPrimary);
+        }
+        
+        .card-track:hover {
+            transform: scale(.975);
+            /* transform: scale(1.05) rotateZ(-1deg); */
+            /* box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06); */
+            /* border: 6px inset #ffffff; */
+            border: 6px inset purple;
+        }
+        
+        #shadowBox {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.2);
+            /* Black w/opacity/see-through */
+            /* Fallback color */
+            border: 3px solid;
+        }
+        
+        .strokeme {
+            /* color: white; */
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        /* image overlay effect */
+        
+        .card-content {
+            /* position: relative;
         width: 90%;
         max-width: 400px;
         margin: auto;
         overflow: hidden; */
-    }
-    
-    .card-content .card-content-overlay {
-        background: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        -webkit-transition: all 0.275s ease-in-out 0s;
-        -moz-transition: all 0.275s ease-in-out 0s;
-        transition: all 0.275s ease-in-out 0s;
-    }
-    
-    .card-content:hover .card-content-overlay {
-        opacity: 1;
-        z-index: 1;
-    }
-    
-    .card-content-image {
-        width: 100%;
-    }
-    
-    .card-content-details {
-        position: absolute;
-        text-align: center;
-        padding-left: 1em;
-        padding-right: 1em;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        opacity: 0;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        -webkit-transition: all 0.275s ease-in-out 0s;
-        -moz-transition: all 0.275s ease-in-out 0s;
-        transition: all 0.275s ease-in-out 0s;
-    }
-    
-    .card-content:hover .card-content-details {
-        top: 50%;
-        left: 50%;
-        opacity: 1;
-        z-index: 1;
-    }
-    
-    .fadeIn-left {
-        left: 20%;
-    }
-    
-    .fadeIn-bottom {
-        top: 80%;
-    }
-    /* image overlay effect */
-    /* .rainbow {
+        }
+        
+        .card-content .card-content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.275s ease-in-out 0s;
+            -moz-transition: all 0.275s ease-in-out 0s;
+            transition: all 0.275s ease-in-out 0s;
+        }
+        
+        .card-content:hover .card-content-overlay {
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .card-content-image {
+            width: 100%;
+        }
+        
+        .card-content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.275s ease-in-out 0s;
+            -moz-transition: all 0.275s ease-in-out 0s;
+            transition: all 0.275s ease-in-out 0s;
+        }
+        
+        .card-content:hover .card-content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .fadeIn-left {
+            left: 20%;
+        }
+        
+        .fadeIn-bottom {
+            top: 80%;
+        }
+        /* image overlay effect */
+        /* .rainbow {
         text-align: center;
         text-decoration: underline;
         font-size: 32px;
         font-family: monospace;
         letter-spacing: 5px;
     } */
-    
-    .rainbow_text_animated {
-        /* background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff); */
-        /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-        background: linear-gradient(to right, #ff0000, #ff9100, #d0ff00, #09ff00, #0000ff, #ff00bb);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        animation: rainbow_animation 3s ease-in-out infinite;
-        background-size: 400% 100%;
-    }
-    
-    @keyframes rainbow_animation {
-        0%,
-        100% {
-            background-position: 0 0;
+        
+        .rainbow_text_animated {
+            /* background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff); */
+            /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+            background: linear-gradient(to right, #ff0000, #ff9100, #d0ff00, #09ff00, #0000ff, #ff00bb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 3s ease-in-out infinite;
+            background-size: 400% 100%;
         }
-        50% {
-            background-position: 100% 0;
+        
+        @keyframes rainbow_animation {
+            0%,
+            100% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 100% 0;
+            }
         }
-    }
-    /*! tile animation */
-    
-    ul.tile {
-        list-style: none;
-        /* --square-size: 16px; */
-        --square-size: 3.5vmin;
-        /* --square-size: 64px; */
-        --gutter: 3px;
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat(var(--square-count), var(--square-size));
-        grid-column-gap: var(--gutter);
-        grid-row-gap: var(--gutter);
-        width: calc(var(--square-count) * var(--square-size) + calc(var(--square-count) - 1) * var(--gutter));
-    }
-    
-    li.tile {
-        /* list-style: none; */
-        display: block;
-        height: var(--square-size);
-        width: var(--square-size);
-        background-color: var(--TrueViolet);
-        animation-name: animateIn;
-        /* animation-duration: 350ms; */
-        animation-duration: .25s;
-        animation-delay: calc(var(--animation-order) * 50ms);
-        animation-fill-mode: both;
-        animation-timing-function: ease-in-out;
-    }
-    
-    #headercontainer {
-        z-index: 3;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    
-    @keyframes animateIn {
-        0% {
+        /*! tile animation */
+        /* https://css-tricks.com/different-approaches-for-creating-a-staggered-animation/ */
+        
+        ul.tile {
+            list-style: none;
+            /* --square-size: 16px; */
+            /* --square-size: 3.5vmin; */
+            --square-size: 32px;
+            /* --square-size: 64px; */
+            --gutter: 3px;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(var(--square-count), var(--square-size));
+            grid-column-gap: var(--gutter);
+            grid-row-gap: var(--gutter);
+            width: calc(var(--square-count) * var(--square-size) + calc(var(--square-count) - 1) * var(--gutter));
+        }
+        
+        li.tile {
+            /* list-style: none; */
+            display: block;
+            height: var(--square-size);
+            width: var(--square-size);
+            background-color: var(--TrueViolet);
+            animation-name: animateIn;
+            /* animation-duration: 350ms; */
+            /* animation-duration: .25s; */
+            animation-duration: .5s;
+            /* animation-delay: calc(var(--animation-order) * 50ms); */
+            animation-delay: calc(var(--animation-order) * 27ms);
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+        }
+        
+        #headercontainer {
+            z-index: 3;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 0px;
+            overflow: visible;
+            pointer-events: none;
+            background: none !important;
+        }
+        
+        @keyframes animateIn {
+            /* 0% {
             opacity: 0;
             transform: scale(0.6) translateY(-8px) translateX(-8px);
         }
         100% {
             opacity: 1;
-        }
-        /* 0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            disabled: true;
-            transform: scale(0.6) translateY(-8px) translateX(-8px);
         } */
-    }
-    /*! tile animation */
-    /* idea for gradient coloring/reacting on hover from portfolio project */
-    /* .nav :is(ul,
-li) {
-    background: var(--pinkLinGrad);
-    background-color: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-    /* * {} */
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                /* disabled: true; */
+                transform: scale(0.6) translateY(-8px) translateX(-8px);
+            }
+        }
+        /*! tile animation */

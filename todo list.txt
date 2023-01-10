@@ -8,7 +8,7 @@ to do list
 -upload tracks onto bandcamp (85%)
 
 -navbar proper styling (90%)
--fix tile load in effect to work properly
+-fix tile load in effect to work properly(90%)
 -
 -
 -
