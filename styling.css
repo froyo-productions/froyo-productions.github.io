@@ -52,9 +52,17 @@
         .scaling-popup-text {
             font-size: 3.5vmin;
         }
+        
+        .scaling-other-text {
+            font-size: 3.8vmin;
+        }
         /* .scaling-popup-text-title {
         font-size: 4vmin;
     } */
+        /* .float-left { */
+        /* float: left; */
+        /* margin-right: 10px; */
+        /* } */
         
         .nav-main {
             /* border: 8px double black; */
@@ -308,7 +316,7 @@
             background-color: var(--TrueViolet);
             animation-name: animateIn;
             /* animation-duration: 350ms; */
-            /* animation-duration: .25s; */
+            /* animation-duration: .5s; */
             animation-duration: .5s;
             /* animation-delay: calc(var(--animation-order) * 50ms); */
             animation-delay: calc(var(--animation-order) * 27ms);

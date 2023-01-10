@@ -1,22 +1,22 @@
 to do list
 ############################
 -make ui rainbow text cycle better
--social media listings and proper links (hovering reveals more information)
 -fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
--upload tracks onto bandcamp (85%)
+-upload tracks onto bandcamp (90%)
 
--navbar proper styling (90%)
--fix tile load in effect to work properly(90%)
+-social media listings and proper links (hovering reveals more information) (90%)
+-navbar proper styling (95%)
+-
+-
+-
 -
 -
 -
 -have sections collapsible (eh)
--
--
--
 
+-fix tile load in effect to work properly(100%)
 -about me section (100%) [should upload new photo with mask]
 -find social media icons for youtube,soundcloud,twitter, (100%)
 -what i use section (100%) [have properly scale on mobile]
