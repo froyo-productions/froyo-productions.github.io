@@ -1,7 +1,7 @@
 to do list
 ############################
 
--fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
+have songs split into 2 columns on mobile (edit bootstrap breaklines) 
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
 -upload tracks onto bandcamp (90%)
@@ -14,6 +14,7 @@ to do list
 -
 -have sections collapsible (eh)
 
+-fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
 -make ui rainbow text cycle better
 -navbar proper styling (95%)
 -social media listings and proper links (hovering reveals more information) (100%)
