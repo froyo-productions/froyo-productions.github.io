@@ -56,22 +56,30 @@ function populateTracksList(data) {
         // imgIcon.classList.add('img-fluid');
         $(tempBandLink).append(imgIcon);
 
+        { /* <lite-youtube videoid="ogfYd705cRs" playlabel="Play: Keynote (Google I/O '18)"></lite-youtube> */ }
+
         // make youtube embed
-        var embedIframe = $(document.createElement('iframe'));
+        var LTYoutubeframe = $(document.createElement('lite-youtube'));
         // regex to turn url into embed 
         // for normal youtube url
         // youtube_embed_url = youtube_url.replace('watch?v=', 'embed/');
         // for playlist attached
+
+        disgustingRegexPattern = /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+        youtube_id = youtube_url.match(disgustingRegexPattern)[6];
+        // complexThumbnailURL = 'https://i.ytimg.com/vi/' + youtube_id + '/maxresdefault.jpg';
+
         youtube_embed_url = youtube_url.replace('watch?v=', 'embed?');
 
         // console.log('preRegex url:', youtube_url);
         // console.log('postRegex url:', youtube_embed_url);
-        embedIframe.attr('src', youtube_embed_url);
-        embedIframe.attr('frameborder', '0');
-        embedIframe.attr('allow', 'fullscreen;');
-        $(embedIframe).addClass('p-0 img-fluid');
+        LTYoutubeframe.attr('videoid', youtube_id);
+        // LTYoutubeframe.attr('src', youtube_embed_url);
+        // LTYoutubeframe.attr('frameborder', '0');
+        // LTYoutubeframe.attr('allow', 'fullscreen;');
+        $(LTYoutubeframe).addClass('p-0 img-fluid');
         //add youtube embed to div
-        $(tempDiv).append(embedIframe);
+        $(tempDiv).append(LTYoutubeframe);
 
 
     });
@@ -80,6 +88,23 @@ function populateTracksList(data) {
 
 }
 
+
+// // make youtube embed
+// var embedIframe = $(document.createElement('iframe'));
+// // regex to turn url into embed 
+// // for normal youtube url
+// // youtube_embed_url = youtube_url.replace('watch?v=', 'embed/');
+// // for playlist attached
+// youtube_embed_url = youtube_url.replace('watch?v=', 'embed?');
+
+// // console.log('preRegex url:', youtube_url);
+// // console.log('postRegex url:', youtube_embed_url);
+// embedIframe.attr('src', youtube_embed_url);
+// embedIframe.attr('frameborder', '0');
+// embedIframe.attr('allow', 'fullscreen;');
+// $(embedIframe).addClass('p-0 img-fluid');
+// //add youtube embed to div
+// $(tempDiv).append(embedIframe);
 
 // <div class=" card card-track p-0 bg-info  ">
 //                     <a href="https://froyoproductions.bandcamp.com/track/awesome-allstar-remix" target="_blank">
