@@ -1,6 +1,7 @@
 to do list
 ############################
 -make ui rainbow text cycle better
+-bitcoin copy to click wallet functionality finish
 -fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
