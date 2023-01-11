@@ -8,6 +8,7 @@ function copy(text, target) {
     document.body.appendChild(input);
     input.select();
     var result = document.execCommand('copy');
+
     document.body.removeChild(input)
     return result;
 }

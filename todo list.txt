@@ -1,14 +1,11 @@
 to do list
 ############################
--make ui rainbow text cycle better
--bitcoin copy to click wallet functionality finish
+
 -fix grid card loadin script misbehaving (can't use navbar while song cards are loading in)
 -revitalize bandcamp with AI art (possible 8bit style overall)
 -make album art for 2022 uploads (operating systems and algorithms respectively)
 -upload tracks onto bandcamp (90%)
 
--social media listings and proper links (hovering reveals more information) (90%)
--navbar proper styling (95%)
 -
 -
 -
@@ -17,6 +14,10 @@ to do list
 -
 -have sections collapsible (eh)
 
+-make ui rainbow text cycle better
+-navbar proper styling (95%)
+-social media listings and proper links (hovering reveals more information) (100%)
+-bitcoin copy to click wallet functionality finish (100%)
 -fix tile load in effect to work properly(100%)
 -about me section (100%) [should upload new photo with mask]
 -find social media icons for youtube,soundcloud,twitter, (100%)

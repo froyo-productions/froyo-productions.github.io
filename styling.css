@@ -4,6 +4,7 @@
          :root {
             /*  */
             --pinkPrimary: #ff00e1;
+            --pinkAltPrimary: #ff50eb;
             --pinkTertiary: #ffa3f4;
             --pinkSecondary: #ff6cda;
             --pinkLinGrad: linear-gradient(to right, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
@@ -30,10 +31,23 @@
             font-size: xx-large;
             /* font-size: 4vmin; */
             /* font-size: 5.5vmin; */
-            --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%);
-            background-size: 4000%;
+            /* --LinGrad: linear-gradient(-70deg, var(--pinkPrimary) 0%, var(--pinkSecondary) 100%); */
+            /* --LinGrad: linear-gradient(-70deg, var(--pinkPrimary), var(--pinkSecondary), var(--pinkPrimary), var(--pinkSecondary)); */
+            --LinGrad: linear-gradient(-45deg, var(--pinkSecondary), var(--pinkAltPrimary), var(--pinkSecondary), var(--pinkAltPrimary));
+            /* background-size: 4000%; */
+            background-size: 300% 300%;
             background-image: var(--LinGrad);
-            animation: gradCycle 10s ease-in infinite alternate-reverse;
+            animation: gradCycle 4s infinite linear;
+        }
+        
+        @keyframes gradCycle {
+            0% {
+                /* background-position: 100% 0; */
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
         }
         
         .mine-font {
@@ -277,7 +291,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            animation: rainbow_animation 3s ease-in-out infinite;
+            animation: rainbow_animation 2s ease-in-out infinite;
             background-size: 400% 100%;
         }
         
@@ -288,6 +302,54 @@
             }
             50% {
                 background-position: 100% 0;
+            }
+        }
+        /* https://www.html-code-generator.com/html/rainbow-text-generator */
+        
+        .animated_rainbow_3 {
+            color: #F00;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            /* font-size: 42px; */
+            /* font-family: Arial Black, Gadget, sans-serif; */
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #FF0000;
+            -webkit-animation: animatedBackground_c 2s infinite alternate;
+        }
+        
+        @keyframes animatedBackground_c {
+            0% {
+                -webkit-text-stroke-color: #ff8b00
+            }
+            10% {
+                -webkit-text-stroke-color: #e8ff00
+            }
+            20% {
+                -webkit-text-stroke-color: #5dff00
+            }
+            30% {
+                -webkit-text-stroke-color: #00ff2e
+            }
+            40% {
+                -webkit-text-stroke-color: #00ffb9
+            }
+            50% {
+                -webkit-text-stroke-color: #00b9ff
+            }
+            60% {
+                -webkit-text-stroke-color: #002eff
+            }
+            70% {
+                -webkit-text-stroke-color: #5d00ff
+            }
+            80% {
+                -webkit-text-stroke-color: #e800ff
+            }
+            90% {
+                -webkit-text-stroke-color: #ff008b
+            }
+            100% {
+                -webkit-text-stroke-color: #ff0000
             }
         }
         /*! tile animation */
